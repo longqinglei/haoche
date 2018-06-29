@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0B35C238-4628-497F-8550-D0AF7D5E0B04</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HCBuyerApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B7535EED077F44026C1F740A6B25D335DB5D1529</key>
+		<string>182.92.242.166:haoche51_mobile_apps/hc_buyer_app_iphone.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HCBuyerApp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B7535EED077F44026C1F740A6B25D335DB5D1529</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>182.92.242.166:haoche51_mobile_apps/hc_buyer_app_iphone.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B7535EED077F44026C1F740A6B25D335DB5D1529</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B7535EED077F44026C1F740A6B25D335DB5D1529</string>
+			<key>IDESourceControlWCCName</key>
+			<string>51</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,2 @@
+/Users/zhangxi/Library/Developer/Xcode/DerivedData/HCBuyerApp-fsmqtgrwccprsscyrccnhdzzkvbh/Build/Products/Debug-iphonesimulator/HCBuyerApp.app
+iPhone Developer: Liang Liu (J47JNZUUBF)

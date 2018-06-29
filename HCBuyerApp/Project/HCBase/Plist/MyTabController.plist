@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>iconselect</key>
+		<string>homeSelect</string>
+		<key>className</key>
+		<string>HCHomeVC</string>
+		<key>titleName</key>
+		<string>首页</string>
+		<key>iconName</key>
+		<string>home</string>
+	</dict>
+	<dict>
+		<key>className</key>
+		<string>HCSelectVehicleViewController</string>
+		<key>iconselect</key>
+		<string>buyselect</string>
+		<key>titleName</key>
+		<string>买车</string>
+		<key>iconName</key>
+		<string>buy</string>
+	</dict>
+	<dict>
+		<key>iconselect</key>
+		<string>forumselect</string>
+		<key>className</key>
+		<string>VehicleSellViewController</string>
+		<key>titleName</key>
+		<string>卖车</string>
+		<key>iconName</key>
+		<string>forumicon</string>
+	</dict>
+	<dict>
+		<key>iconselect</key>
+		<string>myselect</string>
+		<key>className</key>
+		<string>MyViewController</string>
+		<key>titleName</key>
+		<string>我的</string>
+		<key>iconName</key>
+		<string>my</string>
+	</dict>
+</array>
+</plist>

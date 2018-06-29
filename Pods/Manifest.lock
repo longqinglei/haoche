@@ -1,0 +1,43 @@
+PODS:
+  - KVNProgress (2.3.1)
+  - mob_sharesdk (4.1.2):
+    - mob_sharesdk/ShareSDK (= 4.1.2)
+    - MOBFoundation
+  - mob_sharesdk/ShareSDK (4.1.2):
+    - MOBFoundation
+  - mob_sharesdk/ShareSDKPlatforms/QQ (4.1.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation
+  - mob_sharesdk/ShareSDKPlatforms/SinaWeibo (4.1.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation
+  - mob_sharesdk/ShareSDKPlatforms/WeChat (4.1.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation
+  - mob_sharesdk/ShareSDKUI (4.1.2):
+    - mob_sharesdk/ShareSDK
+    - MOBFoundation
+  - MOBFoundation (3.1.6)
+
+DEPENDENCIES:
+  - KVNProgress
+  - mob_sharesdk
+  - mob_sharesdk/ShareSDKPlatforms/QQ
+  - mob_sharesdk/ShareSDKPlatforms/SinaWeibo
+  - mob_sharesdk/ShareSDKPlatforms/WeChat
+  - mob_sharesdk/ShareSDKUI
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - KVNProgress
+    - mob_sharesdk
+    - MOBFoundation
+
+SPEC CHECKSUMS:
+  KVNProgress: 8167b1f19e2758290c0b6143020ed9dcbb0477a1
+  mob_sharesdk: e859de6ace7542f3395ce055682f7cd40efdfaa1
+  MOBFoundation: a87c5f11fb87f873337189c3ec0add4d3ec6221a
+
+PODFILE CHECKSUM: cad85e830326db58900e717b43fa26df7386b0ee
+
+COCOAPODS: 1.5.3

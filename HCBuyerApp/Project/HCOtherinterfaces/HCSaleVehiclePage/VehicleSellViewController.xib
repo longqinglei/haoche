@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VehicleSellViewController">
+            <connections>
+                <outlet property="mScrollView" destination="1YM-Wy-n2n" id="P20-Cj-Hta"/>
+                <outlet property="view" destination="iN0-l3-epB" id="dw7-8E-ZVd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CLQ-Nr-jOX">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1YM-Wy-n2n">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="1YM-Wy-n2n" secondAttribute="trailing" id="6Mu-D2-mzk"/>
+                        <constraint firstAttribute="bottom" secondItem="1YM-Wy-n2n" secondAttribute="bottom" id="Cop-oe-F4w"/>
+                        <constraint firstItem="1YM-Wy-n2n" firstAttribute="top" secondItem="CLQ-Nr-jOX" secondAttribute="top" id="GO6-Ja-C9e"/>
+                        <constraint firstItem="1YM-Wy-n2n" firstAttribute="leading" secondItem="CLQ-Nr-jOX" secondAttribute="leading" id="fK6-w1-B7b"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="CLQ-Nr-jOX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Bhh-Mg-BkJ"/>
+                <constraint firstAttribute="bottom" secondItem="CLQ-Nr-jOX" secondAttribute="bottom" id="fcI-eh-e8c"/>
+                <constraint firstItem="CLQ-Nr-jOX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gQP-pz-TyV"/>
+                <constraint firstAttribute="trailing" secondItem="CLQ-Nr-jOX" secondAttribute="trailing" id="yLZ-Rk-coo"/>
+            </constraints>
+            <point key="canvasLocation" x="61" y="167"/>
+        </view>
+    </objects>
+</document>

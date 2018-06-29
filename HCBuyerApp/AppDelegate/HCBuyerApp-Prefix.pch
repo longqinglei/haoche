@@ -1,0 +1,194 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "HCBaseViewController.h"
+    #import "HCMyTabBarController.h"
+    #import "HCBasicViewController.h"
+   // #import "UIViewExt.h"
+    #import "UIView+ITTAdditions.h"
+    #import "CONSTS.h"
+    #import "HCRequestAllPage.h"
+    #import "UILabel+ITTAdditions.h"
+    #import "UIButton+ITTAdditions.h"
+    #import "NSString+ITTAdditions.h"
+    #import "HCAnalysis.h"
+    #import "AppClient.h"
+    #import "UIImage+ITTAdditions.h"
+    #import "HCLogin.h"
+    #import "NSArray+ITTAdditions.h"
+    #import "NSNull+ITTAdditions.h"
+    #import "SafeKit.h"
+    #import "Config.h"
+    #import "HCUUID.h"
+#import "UIImageView+WebCache.h"
+#endif
+#ifdef DEBUG
+#   define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#   define DLog(...)
+#endif
+
+
+#define NSLog(...)
+#define SUBSCRI NSNotification *notificatione =[NSNotification notificationWithName:@"subscri" object:self userInfo:nil]
+#define SUBSCRISHO [[NSNotificationCenter defaultCenter] postNotification:notificatione]
+#define DATA_CACHE_MANAGER [ITTDataCacheManager sharedManager]
+#define UID NSString *uid = [[NSUserDefaults standardUserDefaults] objectForKey:@"userDefaultsUid"]
+
+#define NULL_TO_NIL(obj) ({ __typeof__ (obj) __obj = (obj); __obj == [NSNull null] ? nil : obj; })
+
+#define UmengAppkey @"5451cefbfd98c559430039cb"
+#define LOADIMAGE(file,ext) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle]pathForResource:file ofType:ext]]
+//线索统计
+#define Home_city   @"&click=city"
+#define Home_search @"&click=search"
+#define Home_moreLow    @"&click=lower_price_more"
+#define Home_moreBrand  @"&click=brand_more"
+#define Home_Thread_In  [[NSUserDefaults standardUserDefaults] objectForKey:@"ConnectingBridge"]
+
+
+#define LIST_PAGE_SIZE @10
+#define HCSCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define HCSCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+#define ColorWithRGB(r,g,b) ([UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:1])
+#define UIColorFromRGBValue(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#define PRICE_STY_CORLOR UIColorFromRGBValue(0xff2626)
+#define PAGE_STYLE_COLOR [UIColor colorWithRed:1.00f green:1.00f blue:1.00f alpha:1.00f]
+#define PROCESS_BAR_COLOR ColorWithRGB(255, 112, 51)
+#define HC_LIST_ROW_HEIGHT (HCSCREEN_WIDTH * 0.133f)
+#define PAGE_BLACK_COLOR ColorWithRGB(0.15f,0.15f,0.15f)
+#define HC_FRAME_GAP 60
+#define  HC_MAX_HOT_BRAND_NUM 8
+#define HC_VEHICLE_LIST_ROW_HEIGHT (HCSCREEN_WIDTH * 0.36f)
+
+#define IOS_VERSION_7_OR_ABOVE [[[UIDevice currentDevice] systemVersion] floatValue] >=7.0?YES:NO
+
+#define IOS_VERSION_9_OR_ABOVE (([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0)? (YES):(NO))
+#define IOS_VERSION_8_OR_ABOVE (([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)? (YES):(NO))
+#define IOS_VERSION_10_OR_ABOVE (([[[UIDevice currentDevice] systemVersion] floatValue] >= 10.0)? (YES):(NO))
+#define HC_LOW_PRICE_VEHICLE_BIG_CELL_ROW_HEIGHT (HCSCREEN_WIDTH * 0.5f + 100) //(HCSCREEN_WIDTH * 6.0f / 7.0f)
+//#define RecommendVehicleUserDefinedKey @"RecommendVehicleUserDefinedKey"
+//#define NewVersionUnSync @"NewVersionUnSync"
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+#define iPhone4s ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+#define iphone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+
+//#define USER_ID [[NSUserDefaults standardUserDefaults]objectForKey:@"user_id"]
+
+
+#define mQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0) // 线程低级处理   -2 可以默认
+#define DefaultQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+
+//#define HighQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0)
+#define mAsync dispatch_get_main_queue() //主线程
+#define UICOLOC UIColorFromRGBValue(0x9b9b9b)
+#define fontScale  ((HCSCREEN_WIDTH != 375) ?HCSCREEN_WIDTH/375: 1 )
+#define GetFontWithSize(a) (HCSCREEN_WIDTH != 375?[UIFont systemFontOfSize:a*fontScale]:[UIFont systemFontOfSize:a])
+#define GetFontWithSizeBold(a) (HCSCREEN_WIDTH != 375?[UIFont boldSystemFontOfSize:a*fontScale]:[UIFont systemFontOfSize:a])
+#define MTABLEBACK UIColorFromRGBValue(0xf9f9f9)
+#define mmmmmmmmm UIColorFromRGBValue(0xff2626)
+#define IPHONE [BizUser getUserPhone]//[User getUserInfo].userPhone
+//#define IMAGE [NSString stringWithFormat:@""]
+#define ImageNamed(IMAGE) [UIImage imageNamed:IMAGE]
+#define ForumCellHeight  HCSCREEN_WIDTH*0.23+5
+
+
+#define TalkingDataKey   @"763CAD79B7D011E417999BE65259C325"
+#define ADTrackingKey    @"3afa36c0eecf46c2858c8adf02e3ae94"
+
+#define HC_HOME_URL      @"http://www.haoche51.com"
+#define APP_url          @"http://itunes.apple.com/lookup?id=946843913"
+typedef enum _MyOrderStatus{
+    kMyOrderStatusOne = 1,
+    kMyOrderStatusTwo = 2,
+    kMyOrderStatusThree = 3,  //已预订  
+    kMyOrderStatusFour = 4,
+    kMyOrderStatusFive = 5,
+    kMyOrderStatusSix = 6,
+    kMyOrderStatusSeven = 7,
+    kMyOrderStatusEight = 8,
+    kMyOrderStatusNine = 9,
+} MyOrderStatus;
+
+
+#define arroww1 [UIImage imageNamed:@"arroww1.png"]
+#define arroww2 [UIImage imageNamed:@"arroww2.png"]
+#define arroww3 [UIImage imageNamed:@"arroww3.png"]
+#define arroww4 [UIImage imageNamed:@"arroww4.png"]
+#define arroww5 [UIImage imageNamed:@"arroww5.png"]
+#define arroww6 [UIImage imageNamed:@"arroww6.png"]
+
+typedef enum _ScreeningStatus{
+    ScreenStatusPrice = 1,   //价格
+    ScreenStatusAge = 2,   //年龄
+    ScreenStatusTransmission = 3,  //变速箱
+    ScreenStatusDisplacement = 4,   //排量
+    ScreenStatusMileage = 5,  //里程
+    ScreenStatusStructure = 6,   //车身结构
+    ScreenStatusStandard = 7,  //排放标准
+} ScreeningStatus;
+
+
+typedef enum _SaleStatus{
+    SaleStatusOffTheShelf = -1,
+    SaleStatusNotSubmitted = 2,
+    SaleStatusOffline = 3,
+    SaleStatusNotShown = 4,
+    SaleStatusSucceess = 1,//暂无
+} SaleStatus;
+
+
+typedef enum _SliderStatus{
+    _SliderStatusBegan = 1,//Began
+    _SliderStatusFailed = 2,
+} SliderStatus;
+
+
+typedef enum _LoadStatus{
+    NOLoadStatus = 1,
+    YESLoadStatus = 2,
+} LoadStatus;
+
+#ifdef APPM1
+//车分期
+#define APPMJCODE   @"800001"
+#define WECHATID            @"wxb8c4bdf4c09cbf04"
+#define WECHATSECRET        @"fda8993e9f9bd79f01274d1142d20779"
+#define QQID                @"1103476617"
+#define QQKEY               @"OJbT39XH3a5HgaEK"
+#define BAppId           @"11451364"
+#define BAppKey          @"PVy85gSR6Zs9EesmGuEjPKkk"
+#define BAppSecret       @"lUK4BiRVACMq8DPZt8YL9iGTlZu7NiEr"
+#define SinaKey          @"2709718350"
+#define SinaSecret       @"54ec8d21fecf587ab685475a79bbf015"
+#define SINAURL          @"http://www.haoche51.com"
+#else
+//主包
+#define APPMJCODE           @"800000"
+#define WECHATID            @"wx7187e09a88bc3ead"
+#define WECHATSECRET        @"a7e717502468a0c09153796b25b916c8"
+#define QQID                @"1106983856"
+#define QQKEY               @"ype2vjnPiEW6F4Ie"
+#define BAppId           @"11426100"
+#define BAppKey          @"R34vtWm7BQ94xgMYVzCIhPdO"
+#define BAppSecret       @"ZQHm0nksBSfj1HU9EDvmarNBlPQLxq60"
+#define SinaKey          @"1388288391"
+#define SinaSecret       @"773d67fc076d630485055a8f56c4ee22"
+#define SINAURL          @"http://www.sharesdk.cn"
+#endif
+
+
