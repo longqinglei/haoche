@@ -2584,16 +2584,6 @@
 			path = HCDropdownListView;
 			sourceTree = "<group>";
 		};
-		33F253B31B90BA59004EEA42 /* HCPlistFiles */ = {
-			isa = PBXGroup;
-			children = (
-				33F253B51B90BA59004EEA42 /* MyTabController.plist */,
-				33FF6DA51BA4120C00400532 /* MyControllerCellPlist.plist */,
-			);
-			name = HCPlistFiles;
-			path = Plist;
-			sourceTree = "<group>";
-		};
 		33F660F01BF58A780085E38F /* LibBPush */ = {
 			isa = PBXGroup;
 			children = (
@@ -2642,10 +2632,8 @@
 		3415233420E4A85C00D3BC9B /* HCBase */ = {
 			isa = PBXGroup;
 			children = (
-				3415237520E4B1DE00D3BC9B /* Common */,
+				3475FC0820E68646003F3070 /* HCPlist */,
 				3415236720E4B10600D3BC9B /* HCUUID */,
-				3415236120E4ADD400D3BC9B /* HCNet */,
-				33F253B31B90BA59004EEA42 /* HCPlistFiles */,
 				33F252CC1B90A2CE004EEA42 /* HCDataBaseSQL */,
 				3415236020E4AD8A00D3BC9B /* HCTools */,
 			);
@@ -3000,23 +2988,23 @@
 			path = HCUUID;
 			sourceTree = "<group>";
 		};
-		3415237520E4B1DE00D3BC9B /* Common */ = {
+		3415237520E4B1DE00D3BC9B /* HCCommon */ = {
 			isa = PBXGroup;
 			children = (
-				3415237620E4B1DE00D3BC9B /* HCBasicViewController.h */,
-				3415237720E4B1DE00D3BC9B /* HCRequestAllPage.m */,
-				3415237820E4B1DE00D3BC9B /* BaseTableViewCell.m */,
-				3415237920E4B1DE00D3BC9B /* HCMyTabBarController.m */,
-				3415237A20E4B1DE00D3BC9B /* HCTwoClassBaseViewController.m */,
-				3415237B20E4B1DE00D3BC9B /* HCBaseViewController.m */,
 				3415237C20E4B1DE00D3BC9B /* BaseTableViewCell.h */,
-				3415237D20E4B1DE00D3BC9B /* HCRequestAllPage.h */,
+				3415237820E4B1DE00D3BC9B /* BaseTableViewCell.m */,
+				3415238020E4B1DE00D3BC9B /* HCBaseViewController.h */,
+				3415237B20E4B1DE00D3BC9B /* HCBaseViewController.m */,
+				3415237620E4B1DE00D3BC9B /* HCBasicViewController.h */,
 				3415237E20E4B1DE00D3BC9B /* HCBasicViewController.m */,
 				3415237F20E4B1DE00D3BC9B /* HCMyTabBarController.h */,
-				3415238020E4B1DE00D3BC9B /* HCBaseViewController.h */,
+				3415237920E4B1DE00D3BC9B /* HCMyTabBarController.m */,
+				3415237D20E4B1DE00D3BC9B /* HCRequestAllPage.h */,
+				3415237720E4B1DE00D3BC9B /* HCRequestAllPage.m */,
 				3415238120E4B1DE00D3BC9B /* HCTwoClassBaseViewController.h */,
+				3415237A20E4B1DE00D3BC9B /* HCTwoClassBaseViewController.m */,
 			);
-			path = Common;
+			path = HCCommon;
 			sourceTree = "<group>";
 		};
 		3415238E20E4B2C100D3BC9B /* HCModel */ = {
@@ -3432,7 +3420,6 @@
 				3415239220E4B49D00D3BC9B /* HCMine */,
 				3415239120E4B48500D3BC9B /* HCSell */,
 				3415238E20E4B2C100D3BC9B /* HCModel */,
-				3415233420E4A85C00D3BC9B /* HCBase */,
 				34DFE9CF20DE15BC0043A31F /* HCRegist */,
 				3463837320DCF8F600FA62AA /* HCBuy */,
 				3463837720DCF8F600FA62AA /* HCHome */,
@@ -3481,6 +3468,15 @@
 				3415233320E4A82200D3BC9B /* HomeList */,
 			);
 			path = HCHome;
+			sourceTree = "<group>";
+		};
+		3475FC0820E68646003F3070 /* HCPlist */ = {
+			isa = PBXGroup;
+			children = (
+				33F253B51B90BA59004EEA42 /* MyTabController.plist */,
+				33FF6DA51BA4120C00400532 /* MyControllerCellPlist.plist */,
+			);
+			path = HCPlist;
 			sourceTree = "<group>";
 		};
 		34A7C27420D8C94B006116FA /* HC_L */ = {
@@ -3643,6 +3639,9 @@
 		370B658D19F0B895008CECE2 /* HCBuyerApp */ = {
 			isa = PBXGroup;
 			children = (
+				3415236120E4ADD400D3BC9B /* HCNet */,
+				3415237520E4B1DE00D3BC9B /* HCCommon */,
+				3415233420E4A85C00D3BC9B /* HCBase */,
 				3415236220E4AEC100D3BC9B /* HCSource */,
 				3415233520E4A89100D3BC9B /* Dependencies */,
 				3463837220DCF8F600FA62AA /* Project */,
