@@ -29,7 +29,7 @@
 			<string>qq</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>QQ41C5B789</string>
+				<string>QQ41FA2CC1</string>
 			</array>
 		</dict>
 		<dict>
@@ -53,12 +53,12 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>tencent1103476617</string>
+				<string>tencent1106914497</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>24</string>
+	<string>1</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>wechat</string>

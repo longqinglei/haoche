@@ -163,20 +163,34 @@ typedef enum _LoadStatus{
     YESLoadStatus = 2,
 } LoadStatus;
 
-#ifdef APPM1
-//车分期
-#define APPMJCODE   @"800001"
+#ifdef APPM2
+//全国购
+#define APPMJCODE           @"800002"
 #define WECHATID            @"wxb8c4bdf4c09cbf04"
 #define WECHATSECRET        @"fda8993e9f9bd79f01274d1142d20779"
-#define QQID                @"1103476617"
-#define QQKEY               @"OJbT39XH3a5HgaEK"
-#define BAppId           @"11451364"
-#define BAppKey          @"PVy85gSR6Zs9EesmGuEjPKkk"
-#define BAppSecret       @"lUK4BiRVACMq8DPZt8YL9iGTlZu7NiEr"
-#define SinaKey          @"2709718350"
-#define SinaSecret       @"54ec8d21fecf587ab685475a79bbf015"
-#define SINAURL          @"http://www.haoche51.com"
+#define QQID                @"1106914497"
+#define QQKEY               @"o6OGsuNMrvT7w3Dn"
+#define BAppId              @"11426100"
+#define BAppKey             @"R34vtWm7BQ94xgMYVzCIhPdO"
+#define BAppSecret          @"ZQHm0nksBSfj1HU9EDvmarNBlPQLxq60"
+#define SinaKey             @"2709718350"
+#define SinaSecret          @"54ec8d21fecf587ab685475a79bbf015"
+#define SINAURL             @"http://www.haoche51.com"
 #else
+//#ifdef APPM1
+////车分期
+//#define APPMJCODE   @"800001"
+//#define WECHATID            @"wxb8c4bdf4c09cbf04"
+//#define WECHATSECRET        @"fda8993e9f9bd79f01274d1142d20779"
+//#define QQID                @"1103476617"
+//#define QQKEY               @"OJbT39XH3a5HgaEK"
+//#define BAppId           @"11451364"
+//#define BAppKey          @"PVy85gSR6Zs9EesmGuEjPKkk"
+//#define BAppSecret       @"lUK4BiRVACMq8DPZt8YL9iGTlZu7NiEr"
+//#define SinaKey          @"2709718350"
+//#define SinaSecret       @"54ec8d21fecf587ab685475a79bbf015"
+//#define SINAURL          @"http://www.haoche51.com"
+//#else
 //主包
 #define APPMJCODE           @"800000"
 #define WECHATID            @"wx7187e09a88bc3ead"

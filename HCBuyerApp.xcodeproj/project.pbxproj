@@ -688,7 +688,6 @@
 		341C726720DB7B9D0007A6BD /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 337A0AF11D124DB3000CE52E /* WebKit.framework */; };
 		341C726820DB7B9D0007A6BD /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33A4BDE41CB6346F0035912E /* JavaScriptCore.framework */; };
 		341C726920DB7B9D0007A6BD /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E79FA51B7219B800130B59 /* AdSupport.framework */; };
-		341C726A20DB7B9D0007A6BD /* libUMFeedback.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E79F631B71D8A600130B59 /* libUMFeedback.a */; };
 		341C726B20DB7B9D0007A6BD /* libBPush.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33F660F21BF58A780085E38F /* libBPush.a */; };
 		341C726C20DB7B9D0007A6BD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E79F5E1B71D63100130B59 /* AVFoundation.framework */; };
 		341C726D20DB7B9D0007A6BD /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377FC3941B42E2C1006C5590 /* ImageIO.framework */; };
@@ -942,6 +941,8 @@
 		3463837B20DCF92D00FA62AA /* HCBuyListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3463837920DCF92D00FA62AA /* HCBuyListCell.m */; };
 		3463838220DCFC3000FA62AA /* HCUI_L.m in Sources */ = {isa = PBXBuildFile; fileRef = 3463838120DCFC3000FA62AA /* HCUI_L.m */; };
 		3463838320DCFC3000FA62AA /* HCUI_L.m in Sources */ = {isa = PBXBuildFile; fileRef = 3463838120DCFC3000FA62AA /* HCUI_L.m */; };
+		3475FC0620E67BE7003F3070 /* libMobClickLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3415235E20E4AD2100D3BC9B /* libMobClickLibrary.a */; };
+		3475FC0720E67C94003F3070 /* libUMFeedback.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E79F631B71D8A600130B59 /* libUMFeedback.a */; };
 		34A7C27720D8C979006116FA /* HCBaseTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A7C27620D8C979006116FA /* HCBaseTableVC.m */; };
 		34A7C27A20D8CB38006116FA /* HCHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A7C27920D8CB38006116FA /* HCHomeVC.m */; };
 		34A7C28820D8CB95006116FA /* NSNull+length.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A7C27D20D8CB95006116FA /* NSNull+length.m */; };
@@ -971,11 +972,6 @@
 		370B658A19F0B894008CECE2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 370B658919F0B894008CECE2 /* CoreGraphics.framework */; };
 		370B658C19F0B894008CECE2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 370B658B19F0B894008CECE2 /* UIKit.framework */; };
 		370B659219F0B895008CECE2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 370B659019F0B895008CECE2 /* InfoPlist.strings */; };
-		370B65A719F0B895008CECE2 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 370B65A619F0B895008CECE2 /* XCTest.framework */; };
-		370B65A819F0B895008CECE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 370B658719F0B894008CECE2 /* Foundation.framework */; };
-		370B65A919F0B895008CECE2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 370B658B19F0B894008CECE2 /* UIKit.framework */; };
-		370B65B119F0B895008CECE2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 370B65AF19F0B895008CECE2 /* InfoPlist.strings */; };
-		370B65B319F0B895008CECE2 /* HCBuyerAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 370B65B219F0B895008CECE2 /* HCBuyerAppTests.m */; };
 		375302BB1A29D63E00905881 /* AppClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 375302B41A29D63E00905881 /* AppClient.m */; };
 		375302BC1A29D63E00905881 /* CustomURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 375302B61A29D63E00905881 /* CustomURLCache.m */; };
 		375302BD1A29D63E00905881 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 375302B81A29D63E00905881 /* MBProgressHUD.m */; };
@@ -1202,16 +1198,6 @@
 		37F30FDF1B2C2EB200B2DC4D /* BizVisitRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F30FDE1B2C2EB200B2DC4D /* BizVisitRecord.m */; };
 		EFDB4913A2FF7A3DBEC4FE1B /* libPods-HCBuyerApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4B86C919E5218B20C670956 /* libPods-HCBuyerApp.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		370B65AA19F0B895008CECE2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 370B657C19F0B894008CECE2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 370B658319F0B894008CECE2;
-			remoteInfo = HCBuyerApp;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		181082831CBFA68F00DCA588 /* UIImageView+HCUIimage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+HCUIimage.h"; sourceTree = "<group>"; };
@@ -1894,11 +1880,7 @@
 		370B658B19F0B894008CECE2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		370B659119F0B895008CECE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		370B659F19F0B895008CECE2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		370B65A519F0B895008CECE2 /* HCBuyerAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HCBuyerAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		370B65A619F0B895008CECE2 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		370B65AE19F0B895008CECE2 /* HCBuyerAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HCBuyerAppTests-Info.plist"; sourceTree = "<group>"; };
-		370B65B019F0B895008CECE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		370B65B219F0B895008CECE2 /* HCBuyerAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCBuyerAppTests.m; sourceTree = "<group>"; };
 		375302B31A29D63E00905881 /* AppClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppClient.h; sourceTree = "<group>"; };
 		375302B41A29D63E00905881 /* AppClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppClient.m; sourceTree = "<group>"; };
 		375302B51A29D63E00905881 /* CustomURLCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomURLCache.h; sourceTree = "<group>"; };
@@ -2208,6 +2190,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				341C727920DB7B9D0007A6BD /* libTalkingDataWatch.a in Frameworks */,
+				341C727D20DB7B9D0007A6BD /* libTalkingData.a in Frameworks */,
+				3475FC0620E67BE7003F3070 /* libMobClickLibrary.a in Frameworks */,
+				341C726B20DB7B9D0007A6BD /* libBPush.a in Frameworks */,
+				3475FC0720E67C94003F3070 /* libUMFeedback.a in Frameworks */,
 				341C726220DB7B9D0007A6BD /* Photos.framework in Frameworks */,
 				341C726320DB7B9D0007A6BD /* libstdc++.tbd in Frameworks */,
 				341C726420DB7B9D0007A6BD /* libc++.tbd in Frameworks */,
@@ -2216,9 +2203,7 @@
 				341C726720DB7B9D0007A6BD /* WebKit.framework in Frameworks */,
 				341C726820DB7B9D0007A6BD /* JavaScriptCore.framework in Frameworks */,
 				341C726920DB7B9D0007A6BD /* AdSupport.framework in Frameworks */,
-				341C726A20DB7B9D0007A6BD /* libUMFeedback.a in Frameworks */,
 				3415235120E4AB0200D3BC9B /* libMobClickLibrary.a in Frameworks */,
-				341C726B20DB7B9D0007A6BD /* libBPush.a in Frameworks */,
 				341C726C20DB7B9D0007A6BD /* AVFoundation.framework in Frameworks */,
 				341C726D20DB7B9D0007A6BD /* ImageIO.framework in Frameworks */,
 				341C726E20DB7B9D0007A6BD /* libiconv.dylib in Frameworks */,
@@ -2231,11 +2216,9 @@
 				341C727620DB7B9D0007A6BD /* StoreKit.framework in Frameworks */,
 				341C727720DB7B9D0007A6BD /* MessageUI.framework in Frameworks */,
 				341C727820DB7B9D0007A6BD /* CoreLocation.framework in Frameworks */,
-				341C727920DB7B9D0007A6BD /* libTalkingDataWatch.a in Frameworks */,
 				341C727A20DB7B9D0007A6BD /* CoreMotion.framework in Frameworks */,
 				341C727B20DB7B9D0007A6BD /* Security.framework in Frameworks */,
 				341C727C20DB7B9D0007A6BD /* libicucore.dylib in Frameworks */,
-				341C727D20DB7B9D0007A6BD /* libTalkingData.a in Frameworks */,
 				341C727E20DB7B9D0007A6BD /* QuartzCore.framework in Frameworks */,
 				341C727F20DB7B9D0007A6BD /* libsqlite3.dylib in Frameworks */,
 				341C728020DB7B9D0007A6BD /* CoreGraphics.framework in Frameworks */,
@@ -2248,9 +2231,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37E79FA31B71D96300130B59 /* libUMFeedback.a in Frameworks */,
 				3415235F20E4AD2200D3BC9B /* libMobClickLibrary.a in Frameworks */,
 				33F660F41BF58A780085E38F /* libBPush.a in Frameworks */,
-				37E79FA31B71D96300130B59 /* libUMFeedback.a in Frameworks */,
 				3415233620E4A9BC00D3BC9B /* libTalkingData.a in Frameworks */,
 				344164FD20DA564600C3DF82 /* Photos.framework in Frameworks */,
 				344164FB20DA558D00C3DF82 /* libstdc++.tbd in Frameworks */,
@@ -2282,16 +2265,6 @@
 				370B658A19F0B894008CECE2 /* CoreGraphics.framework in Frameworks */,
 				370B658C19F0B894008CECE2 /* UIKit.framework in Frameworks */,
 				EFDB4913A2FF7A3DBEC4FE1B /* libPods-HCBuyerApp.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		370B65A219F0B895008CECE2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				370B65A719F0B895008CECE2 /* XCTest.framework in Frameworks */,
-				370B65A919F0B895008CECE2 /* UIKit.framework in Frameworks */,
-				370B65A819F0B895008CECE2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3605,7 +3578,6 @@
 			isa = PBXGroup;
 			children = (
 				370B658D19F0B895008CECE2 /* HCBuyerApp */,
-				370B65AC19F0B895008CECE2 /* HCBuyerAppTests */,
 				370B658619F0B894008CECE2 /* Frameworks */,
 				370B658519F0B894008CECE2 /* Products */,
 				EF7D6A4281B069954114C893 /* Pods */,
@@ -3617,7 +3589,6 @@
 			isa = PBXGroup;
 			children = (
 				370B658419F0B894008CECE2 /* HCBuyerApp.app */,
-				370B65A519F0B895008CECE2 /* HCBuyerAppTests.xctest */,
 				341C736920DB7B9D0007A6BD /* HCBuyerApp_m1.app */,
 			);
 			name = Products;
@@ -3692,24 +3663,6 @@
 				33914E651DE41ED700ACF3C7 /* HCBuyerApp-Prefix.pch */,
 				370B659F19F0B895008CECE2 /* Images.xcassets */,
 				370B659019F0B895008CECE2 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		370B65AC19F0B895008CECE2 /* HCBuyerAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				370B65B219F0B895008CECE2 /* HCBuyerAppTests.m */,
-				370B65AD19F0B895008CECE2 /* Supporting Files */,
-			);
-			path = HCBuyerAppTests;
-			sourceTree = "<group>";
-		};
-		370B65AD19F0B895008CECE2 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				370B65AE19F0B895008CECE2 /* HCBuyerAppTests-Info.plist */,
-				370B65AF19F0B895008CECE2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -3975,24 +3928,6 @@
 			productReference = 370B658419F0B894008CECE2 /* HCBuyerApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		370B65A419F0B895008CECE2 /* HCBuyerAppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 370B65B919F0B895008CECE2 /* Build configuration list for PBXNativeTarget "HCBuyerAppTests" */;
-			buildPhases = (
-				370B65A119F0B895008CECE2 /* Sources */,
-				370B65A219F0B895008CECE2 /* Frameworks */,
-				370B65A319F0B895008CECE2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				370B65AB19F0B895008CECE2 /* PBXTargetDependency */,
-			);
-			name = HCBuyerAppTests;
-			productName = HCBuyerAppTests;
-			productReference = 370B65A519F0B895008CECE2 /* HCBuyerAppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -4003,7 +3938,7 @@
 				ORGANIZATIONNAME = haoche51;
 				TargetAttributes = {
 					341C711120DB7B9D0007A6BD = {
-						DevelopmentTeam = 6HS8958U3F;
+						DevelopmentTeam = Q34A94D48X;
 						ProvisioningStyle = Automatic;
 					};
 					370B658319F0B894008CECE2 = {
@@ -4017,11 +3952,6 @@
 								enabled = 1;
 							};
 						};
-					};
-					370B65A419F0B895008CECE2 = {
-						DevelopmentTeam = QZQ94V7232;
-						ProvisioningStyle = Manual;
-						TestTargetID = 370B658319F0B894008CECE2;
 					};
 				};
 			};
@@ -4041,7 +3971,6 @@
 			targets = (
 				370B658319F0B894008CECE2 /* HCBuyerApp */,
 				341C711120DB7B9D0007A6BD /* HCBuyerApp_m1 */,
-				370B65A419F0B895008CECE2 /* HCBuyerAppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -4508,14 +4437,6 @@
 				33F252FE1B90A2CE004EEA42 /* brand_series.sql in Resources */,
 				33F252FF1B90A2CE004EEA42 /* city_v15.sql in Resources */,
 				3799EDC91A63A2320048E5D4 /* 79.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		370B65A319F0B895008CECE2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				370B65B119F0B895008CECE2 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -5295,37 +5216,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		370B65A119F0B895008CECE2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				370B65B319F0B895008CECE2 /* HCBuyerAppTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		370B65AB19F0B895008CECE2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 370B658319F0B894008CECE2 /* HCBuyerApp */;
-			targetProxy = 370B65AA19F0B895008CECE2 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		370B659019F0B895008CECE2 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				370B659119F0B895008CECE2 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		370B65AF19F0B895008CECE2 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				370B65B019F0B895008CECE2 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -5354,7 +5251,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = 6HS8958U3F;
+				DEVELOPMENT_TEAM = Q34A94D48X;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5365,12 +5262,11 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
-					"APPM1=1",
+					"APPM2=1",
 				);
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(PROJECT_DIR)/HCBuyerApp/third_part/UMengFeedback_SDK",
 				);
 				INFOPLIST_EXPAND_BUILD_SETTINGS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/HCBuyerApp_m1-Info.plist";
@@ -5386,13 +5282,17 @@
 					"$(PROJECT_DIR)/HCBuyerApp/LibBPush",
 					"$(PROJECT_DIR)/HCBuyerApp/third_part/pinyin",
 					"$(PROJECT_DIR)/HCBuyerApp/third_part/TalkingData",
+					"$(PROJECT_DIR)/HCBuyerApp/Dependencies/fmdb",
+					"$(PROJECT_DIR)/HCBuyerApp/Dependencies/UMengFeedback_SDK",
+					"$(PROJECT_DIR)/HCBuyerApp/Dependencies/LibBPush",
+					"$(PROJECT_DIR)/HCBuyerApp/Dependencies/TalkingData",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.haoche51.chefenqi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.haoche51.maichewuyou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -5414,7 +5314,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = 6HS8958U3F;
+				DEVELOPMENT_TEAM = Q34A94D48X;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5425,7 +5325,6 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(PROJECT_DIR)/HCBuyerApp/third_part/UMengFeedback_SDK",
 				);
 				INFOPLIST_EXPAND_BUILD_SETTINGS = YES;
 				INFOPLIST_FILE = "$(SRCROOT)/HCBuyerApp_m1-Info.plist";
@@ -5441,13 +5340,17 @@
 					"$(PROJECT_DIR)/HCBuyerApp/LibBPush",
 					"$(PROJECT_DIR)/HCBuyerApp/third_part/pinyin",
 					"$(PROJECT_DIR)/HCBuyerApp/third_part/TalkingData",
+					"$(PROJECT_DIR)/HCBuyerApp/Dependencies/fmdb",
+					"$(PROJECT_DIR)/HCBuyerApp/Dependencies/UMengFeedback_SDK",
+					"$(PROJECT_DIR)/HCBuyerApp/Dependencies/LibBPush",
+					"$(PROJECT_DIR)/HCBuyerApp/Dependencies/TalkingData",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.haoche51.chefenqi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.haoche51.maichewuyou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -5658,62 +5561,6 @@
 			};
 			name = Release;
 		};
-		370B65BA19F0B895008CECE2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HCBuyerApp.app/HCBuyerApp";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = QZQ94V7232;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/zhangxi/Desktop/v3.3.2/hc_buyer_app_iphone/HCBuyerApp/AppDelegate/HCBuyerApp-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "HCBuyerAppTests/HCBuyerAppTests-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.haoche51.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				VALID_ARCHS = "armv7 armv7s arm64";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		370B65BB19F0B895008CECE2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HCBuyerApp.app/HCBuyerApp";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = QZQ94V7232;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/zhangxi/Desktop/v3.3.2/hc_buyer_app_iphone/HCBuyerApp/AppDelegate/HCBuyerApp-Prefix.pch";
-				INFOPLIST_FILE = "HCBuyerAppTests/HCBuyerAppTests-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.haoche51.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				VALID_ARCHS = "armv7 armv7s arm64";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -5740,15 +5587,6 @@
 			buildConfigurations = (
 				370B65B719F0B895008CECE2 /* Debug */,
 				370B65B819F0B895008CECE2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		370B65B919F0B895008CECE2 /* Build configuration list for PBXNativeTarget "HCBuyerAppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				370B65BA19F0B895008CECE2 /* Debug */,
-				370B65BB19F0B895008CECE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
