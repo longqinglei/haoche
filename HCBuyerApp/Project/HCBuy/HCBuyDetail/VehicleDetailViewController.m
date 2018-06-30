@@ -475,7 +475,7 @@
         //有的平台要客户端分享需要加此方法，例如微博
         [shareParams SSDKEnableUseClientShare];
         
-        [self.miniapp SSDKSetupWeChatMiniProgramShareParamsByTitle:sharedTitle description:content webpageUrl:[NSURL URLWithString:sharedUrl] path:@"/pages/detail/detail?id=%s" thumbImage:[imageArray firstObject] hdThumbImage:[imageArray firstObject] userName:@"gh_7154d801998f" withShareTicket:NO miniProgramType:0 forPlatformSubType:SSDKPlatformSubTypeWechatSession];
+        [self.miniapp SSDKSetupWeChatMiniProgramShareParamsByTitle:sharedTitle description:content webpageUrl:[NSURL URLWithString:sharedUrl] path:[NSString stringWithFormat:@"/pages/detail/detail?id=%ld",self.vehicle.vehicle_id] thumbImage:[imageArray firstObject] hdThumbImage:[imageArray firstObject] userName:@"gh_7154d801998f" withShareTicket:NO miniProgramType:0 forPlatformSubType:SSDKPlatformSubTypeWechatSession];
         
         SSUIPlatformItem *item = [SSUIPlatformItem itemWithPlatformType:SSDKPlatformSubTypeWechatSession];
         item.platformName = @"好车无忧";

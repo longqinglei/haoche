@@ -9,7 +9,7 @@
 #import "HChomeViewController.h"
 
 #import "UIImageView+WebCache.h"
-#import "BIzHomeReuqest.h"
+#import "BizHomeReuqest.h"
 #import "HomePromoteModel.h"
 #import "HChomeFixedPictureCell.h"
 #import "OperationchartView.h"

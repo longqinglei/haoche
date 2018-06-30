@@ -58,10 +58,16 @@
     self.modelArray  = [[NSMutableArray alloc]init];
     NSString * string = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) HCObjectAtIndex:0];
     NSString * filePath = [string stringByAppendingString:@"/modelArr.swh"];
-    NSMutableArray *modelArr = [NSMutableArray arrayWithArray:[NSKeyedUnarchiver unarchiveObjectWithFile:filePath]];
-    if (modelArr.count!=0) {
-        self.bodyModel = [modelArr HCObjectAtIndex:0];
-        self.footModel = [modelArr HCObjectAtIndex:1];
+    @try {
+        NSMutableArray *modelArr = [NSMutableArray arrayWithArray:[NSKeyedUnarchiver unarchiveObjectWithFile:filePath]];
+        if (modelArr.count!=0) {
+            self.bodyModel = [modelArr HCObjectAtIndex:0];
+            self.footModel = [modelArr HCObjectAtIndex:1];
+        }
+    } @catch (NSException *exception) {
+        
+    } @finally {
+        
     }
     [self createGuideViewWithGoBtn];
     
